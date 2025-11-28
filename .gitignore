@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+.Python
+env/
+build/
+dist/
+# IDE
+.vscode/
+.idea/
+# OS
+Thumbs.db
+.DS_Store
+
+# virtual environment folders
+.venv/
+env/
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
