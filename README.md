@@ -342,5 +342,6 @@ Gênero: (deixar vazio)
 ## Suporte
 
 Para dúvidas ou melhorias, consulte o código-fonte em `data/`.
+Para uma análise mais detalhada, acesse: https://youtu.be/uuU2TBlDdhs
 
 **Bom uso!**
