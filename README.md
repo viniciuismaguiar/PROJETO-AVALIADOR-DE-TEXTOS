@@ -6,7 +6,7 @@ Um programa interativo para avaliar textos em português (dissertação, conto, 
 
 ## Requisitos do Sistema
 
-- **Python 3.8+** (testado em Python 3.14)
+- **Python 3.8+** (testado em Python 3.14), no entanto, para Windows, pode ser usado o comando ***py*** em vez de instalar o python
 - **Windows, macOS ou Linux**
 - **pip** (gerenciador de pacotes Python)
 - ~10 MB de espaço em disco
@@ -45,7 +45,7 @@ cd PROJETO-AVALIADOR-DE-TEXTOS
 
 ```powershell
 # Windows (PowerShell)
-python -m venv .venv
+py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 # macOS/Linux
@@ -58,7 +58,11 @@ source .venv/bin/activate
 ### 4. Instalar dependências
 
 ```bash
-pip install -r requirements.txt
+# Windows (PowerShell)
+py pip install -r requirements.txt
+
+# macOS/Linux
+python pip install -r requirements.txt
 ```
 
 ---
@@ -66,12 +70,23 @@ pip install -r requirements.txt
 ### 5. Baixar recursos NLTK (necessário apenas uma vez)
 
 ```bash
+# Windows (PowerShell)
+py -c "import nltk; nltk.download('punkt')"
+
+# macOS/Linux
 python -c "import nltk; nltk.download('punkt')"
 ```
 
 Ou de forma interativa:
 
 ```python
+# Windows (PowerShell)
+py
+>>> import nltk
+>>> nltk.download('punkt')
+>>> exit()
+
+# macOS/Linux
 python
 >>> import nltk
 >>> nltk.download('punkt')
@@ -83,7 +98,7 @@ python
 ### 6. Executar o projeto
 
 ```bash
-python main.py
+python main.py ou py main.py
 ```
 
 *(Substitua `main.py` caso o arquivo principal tenha outro nome.)*
@@ -95,13 +110,13 @@ python main.py
 ### Iniciar o programa interativo
 
 ```bash
-python main.py
+python main.py ou py main.py
 ```
 
 ou alternativamente:
 
 ```bash
-python -m data.main
+python -m data.main ou py -m data.main
 ```
 
 ### Menu de opções
