@@ -71,10 +71,10 @@ python pip install -r requirements.txt
 
 ```bash
 # Windows (PowerShell)
-py -c "import nltk; nltk.download('punkt')"
+py -c "import nltk; nltk.download('punkt_tab')"
 
 # macOS/Linux
-python -c "import nltk; nltk.download('punkt')"
+python -c "import nltk; nltk.download('punkt_tab')"
 ```
 
 Ou de forma interativa:
