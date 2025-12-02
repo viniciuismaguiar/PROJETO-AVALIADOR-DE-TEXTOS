@@ -15,13 +15,33 @@ Um programa interativo para avaliar textos em português (dissertação, conto, 
 
 ## Instalação
 
-### 1. Clonar ou baixar o projeto
+### 1. Instalar e configurar o Git no terminal
+
+Antes de baixar o projeto, é necessário instalar o Git.
+
+* Baixe e instale o Git:
+  [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+Após a instalação, verifique se o Git está funcionando no terminal:
 
 ```bash
-cd projeto-avaliacao_textos
+git --version
 ```
 
-### 2. (Recomendado) Criar um ambiente virtual
+Se uma versão for exibida, o Git está configurado corretamente.
+
+---
+
+### 2. Clonar ou baixar o projeto
+
+```bash
+git clone https://github.com/SEU-USUARIO/PROJETO-AVALIADOR-DE-TEXTOS.git
+cd PROJETO-AVALIADOR-DE-TEXTOS
+```
+
+---
+
+### 3. (Recomendado) Criar um ambiente virtual
 
 ```powershell
 # Windows (PowerShell)
@@ -33,19 +53,23 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Instalar dependências
+---
+
+### 4. Instalar dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Baixar recursos NLTK (necessário apenas uma vez)
+---
 
-```python
+### 5. Baixar recursos NLTK (necessário apenas uma vez)
+
+```bash
 python -c "import nltk; nltk.download('punkt')"
 ```
 
-Ou, de forma interativa:
+Ou de forma interativa:
 
 ```python
 python
@@ -53,6 +77,16 @@ python
 >>> nltk.download('punkt')
 >>> exit()
 ```
+
+---
+
+### 6. Executar o projeto
+
+```bash
+python main.py
+```
+
+*(Substitua `main.py` caso o arquivo principal tenha outro nome.)*
 
 ---
 
