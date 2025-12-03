@@ -59,7 +59,7 @@ source .venv/bin/activate
 
 ```bash
 # Windows (PowerShell)
-py pip install -r requirements.txt
+py -m pip install -r requirements.txt
 
 # macOS/Linux
 python pip install -r requirements.txt
