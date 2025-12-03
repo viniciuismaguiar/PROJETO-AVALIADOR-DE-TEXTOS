@@ -35,7 +35,7 @@ Se uma versão for exibida, o Git está configurado corretamente.
 ### 2. Clonar ou baixar o projeto
 
 ```bash
-git clone https://github.com/SEU-USUARIO/PROJETO-AVALIADOR-DE-TEXTOS.git
+git clone https://github.com/viniciuismaguiar/PROJETO-AVALIADOR-DE-TEXTOS.git
 cd PROJETO-AVALIADOR-DE-TEXTOS
 ```
 
